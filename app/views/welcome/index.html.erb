@@ -1,2 +1,12 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<% if current_user %>
+  <h3>Welcome: <%= current_user.email %></h3>
+<% else %>
+  <div class="card bg-dark text-white">
+  <%= image_tag "sunset.jpg", class:"card-img" %>
+  <div class="card-img-overlay">
+    <h5 class="card-title">Photo App</h5>
+    <p class="card-text">Welcome to the Photo Management App!</p>
+    <p class="card-text">You'll love managing your Photos with our application. Sign up!</p>
+  </div>
+</div>
+<% end %>

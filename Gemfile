@@ -51,6 +51,7 @@ group :development, :test do
 
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
+  gem "letter_opener"
 end
 
 group :development do
@@ -74,3 +75,6 @@ end
 group :production do
   gem "pg"
 end
+
+gem 'devise'
+gem 'devise-bootstrap-views', '~> 1.0'
