@@ -1,5 +1,5 @@
 <% if current_user %>
-  <h3>Welcome: <%= current_user.email %></h3>
+  <h3>Welcome: <%= current_user.email.split('@')[0].capitalize %></h3>
 <% else %>
   <div class="card bg-dark text-white">
   <%= image_tag "sunset.jpg", class:"card-img" %>

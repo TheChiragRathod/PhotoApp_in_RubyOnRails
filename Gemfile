@@ -78,3 +78,7 @@ end
 
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
+gem 'twitter-bootstrap-rails'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'sass-rails'
